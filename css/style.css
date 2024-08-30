@@ -1,0 +1,76 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #30c92d;
+}   
+nav{
+    background-color: #1e9e1c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+main{
+    height: 110vh;
+    margin: 20px;
+    padding: 10px;
+}
+footer{
+    background-color: #30c92d;
+    text-align: center;
+}
+img{
+    height: 100%;
+}
+img:hover{
+    opacity: 90%;
+    transform: scale(0.8);
+  }
+table, th, td{
+    border: 1px solid #574CBA;
+    border-collapse: collapse;
+}
+table {
+    margin-top: 20px;
+}
+thead {
+    background-color: #574CBA;
+    color: #FADC28;
+}
+tbody {
+    padding: 8px;
+}
+tbody > tr:nth-child(odd) {
+    background-color: #FADC28;
+}
+form{
+    inline-size: 15%;
+}
+input, textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+input[type = submit]{
+    margin-top: 20px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Logo do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo"></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="cursos.html"><i class="fa-solid fa-book"></i></a></li>
+            <li><a href="sobre.html"><i class="fa-solid fa-circle-info"></i></a></li>
+            <li><a href="contato.html"><i class="fa-solid fa-phone"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Formulário de Contato</h2>
+        </section>
+        <section>
+            <form action="index.html" method="post">
+                <fieldset>
+                    <legend>1 - Informações Pessoais</legend>
+                    <label>Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                    <label>Email: </label>
+                    <input type="email" name="email" id="email">
+                    <label>Telefone: </label>
+                    <input type="tel" name="telefone" id="telefone">
+                </fieldset>
+                <fieldset>
+                    <legend>2 - Preferências </legend>
+                    <label>Selecione 1 curso:</label><br>
+                    <select name="cursos" id="cursos">
+                        <option value="engenharia_mecanica">Engenharia Mecânica</option>
+                        <option value="licenciatura_matematica">Licenciatura em Matemática</option>
+                        <option value="tecnologia_ads">Tecnologia em Análise e Desenvolvimento de Sistemas</option>
+                        <option value="tecnologia_si">Tecnologia em Sistemas para Internet</option>
+                    </select> <br>
+                    <label for="campo">Marque 1 ou mais campos de estudo que você tem interesse:</label><br>
+                    <input type="checkbox" name="engenharia" id="engenharia">
+                    <label for="engenharia">Engenharia</label> <br>
+                    <input type="checkbox" name="matemática" id="matematica">
+                    <label for="matematica">Matemática</label><br>
+                    <input type="checkbox" name="tecnologia" id="tecnologia">
+                    <label for="tecnologia">Tecnologia</label><br>
+                    <label for="tipo">Selecione 1 tipo de curso:</label><br>
+                    <input type="radio" id="bacharelado" name="bacharelado" value="bacharelado">
+                    <label for="bacharelado">Bacharelado</label><br>
+                    <input type="radio" id="licenciatura" name="licenciatura" value="licenciatura">
+                    <label for="licenciatura">Licenciatura</label><br>
+                    <input type="radio" id="tecnologo" name="tecnologo" value="tecnologo">
+                    <label for="tecnologo">Tecnólogo</label> 
+                </fieldset>
+                <fieldset>
+                    <legend>3 - Arquivos</legend>
+                    <label>Insira sua foto: </label>
+                    <input type="file" name="foto" id="foto" accept="png, jpg, jpeg" multiple>
+                    <label>Insira seu Histórico Escolar:</label>
+                    <input type="file" name="historico" id="historico" accept="pdf, docx, odt" multiple>    
+                </fieldset>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; IFSP 2024</p>
+    </footer>
+</body>
+</html>
